@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <div class="details">
+        <h2>{{cov.title}}</h2>
+        <p>{{cov.text}}</p>
+    </div>
+
+    <h4><a href="{% url 'blog_edit' cov.pk %}">Edit this post</a></h4>
+    <h4><a href="{% url 'blog_delete' cov.pk %}">Delete this post</a></h4>
+
+
+{% endblock content %}
